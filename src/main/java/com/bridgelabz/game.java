@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 public class game {
     public static void main(String[] args) {
-        int snake=1, ladder=2, player=0;
+        int snake=1, ladder=2, player=0, count=0;
         while (player<100) {
             int dice=(int)(Math.random()*6+1);
 //            System.out.println(dice);
@@ -23,7 +23,9 @@ public class game {
             else {
                 player=player+0;
             }
+            count++;
             System.out.println("Player current position is: "+player);
         }
+        System.out.println(count+" times the dice was played.");
     }
 }
